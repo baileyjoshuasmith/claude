@@ -1,0 +1,22 @@
+{
+  "name": "life-dashboard-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "google:auth": "node src/sync/google-calendar-auth.js",
+    "sync:google": "node src/sync/run-google-sync.js",
+    "sync:apple": "node src/sync/run-apple-sync.js",
+    "sync:all": "node src/sync/run-all.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "googleapis": "^144.0.0",
+    "luxon": "^3.5.0",
+    "node-ical": "^0.20.1",
+    "tsdav": "^2.1.1"
+  }
+}
